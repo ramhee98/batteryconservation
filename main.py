@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
 import os
-import random
-import sys
-import subprocess
 import threading
-import io
-import signal
 import time
 import gi
-import pwd
 
 gi.require_version('Gtk', '3.0')
 gi.require_version('AppIndicator3', '0.1')
