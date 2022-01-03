@@ -2,6 +2,7 @@ Batteryconservation is a small python script wich creates an appindicator for ub
 It's also using notifications to let you know when the mode changes and it will update every 30 seconds automatically.
 Its limited to stop charging at 60%, 80% or 90% and disabled (charging normally), but you can easially expand those functions if you wish to.
 Please add the needed requirements.
+Make sure your user has write access to /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode else the application won't work
 
 Application was tested with a Lenovo Yoga 7 14ACN6.
 
