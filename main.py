@@ -19,6 +19,7 @@ APPINDICATOR_ID = 'myappindicator'
 applicationname = 'Battery conservation'
 cm_path = '/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'
 bat_capacity_path = '/sys/class/power_supply/BAT0/capacity'
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 config_object = ConfigParser()
 indicator = None
 old_notification = None
