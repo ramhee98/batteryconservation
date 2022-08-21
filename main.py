@@ -163,7 +163,7 @@ def limit_charging(seperate_thread=False):
         if state == 1:
             write_state(0)
             print('Conservation mode changed to ' + str(read_state(cm_path)))
-    elif bat_capacity >= percentage:
+    elif (bat_capacity >= percentage) or percentage == 60:
         print("charging limited to " + str(percentage) + "%")
         icon = 'limit' + str(percentage) + '.png'
         # if not limiting change to limit
